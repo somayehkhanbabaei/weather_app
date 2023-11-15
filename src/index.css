@@ -1,0 +1,9 @@
+body {
+  background-color: teal;
+}
+
+p {
+  font-size: 25px;
+  text-align: center;
+  font-weight: 700;
+}
