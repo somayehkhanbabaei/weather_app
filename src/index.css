@@ -1,9 +1,61 @@
 body {
-  background-color: teal;
+  background-color: #fff;
+}
+
+/* input:focus {
+  border
+} */
+
+input[type='text']:focus {
+  border: 1px solid rgb(245, 124, 53);
+}
+
+.container {
+  height: 500px;
+  margin-top: 55px;
+  max-width: 750px;
+  box-shadow: 1px 1px 5px 0.2px rgb(250, 132, 89);
+  border-radius: 5px;
+}
+
+.btn-primary {
+  background-color: rgb(245, 124, 53);
+  padding: 13px 35px;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: rgb(249, 132, 64);
+}
+
+.card {
+  height: 250px;
+  overflow: hidden;
+}
+
+.cardInfo {
+  background-color: rgb(245, 124, 53);
 }
 
 p {
   font-size: 25px;
   text-align: center;
   font-weight: 700;
+}
+
+ul li {
+  list-style-type: none;
+  font-size: 18px;
+  font-weight: 400;
+  color: rgb(48, 47, 47);
+  margin-top: 25px;
+}
+
+.iconInfo {
+  font-size: 35px;
+  font-weight: 700;
+  margin-top: 50px;
 }

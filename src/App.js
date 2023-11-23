@@ -4,8 +4,8 @@ function App() {
   return (
     <div className='App'>
       <Weather city='Utrecht' />
-      <p>
-        Create by Somayeh Khanbabaei{' '}
+      <p className='mt-5'>
+        Create by Somayeh Khanbabaei
         <a href='https://github.com/somayehkhanbabaei/weather_app'>
           Open Source
         </a>

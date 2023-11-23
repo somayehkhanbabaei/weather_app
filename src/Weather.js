@@ -1,25 +1,55 @@
-import React, { useState } from 'react';
-import axios from 'axios';
+// import React, { useState } from 'react';
+// import axios from 'axios';
 
 export default function Weather(props) {
-  let [temperature, setTemperature] = useState(null);
+  return (
+    <div className='container'>
+      <form className='p-5'>
+        <div className='row'>
+          <div className='col-9'>
+            <div className='form-group'>
+              <input
+                type='text'
+                className='form-control p-3 shadow-none'
+                placeholder='Type a city'
+              />
+            </div>
+          </div>
+          <div className='col-3'>
+            <button type='submit' class='btn btn-primary'>
+              Search
+            </button>
+          </div>
+        </div>
+      </form>
 
-  function showTemperature(response) {
-    setTemperature(response.data.main.temp);
-  }
+      <div className='row'>
+        <div className='col-6'>
+          <div className='card'>
+            <div className='card-body cardInfo'>
+              <h1>San Francisco</h1>
+              <ul>
+                <li>Wednesday 21:25, broken clouds</li>
+                <li>Humidity: 66%, Wind: 3.13km/h</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div className='col-6'>
+          <div className='card'>
+            <div className='card-body text-center iconInfo'>
+              <span className=''>☁️</span>
+              <span className=''>15°C</span>
+            </div>
+          </div>
+        </div>
+      </div>
 
-  let url = `https://api.openweathermap.org/data/2.5/weather?q=${props.city}&appid=3a94f3778290bfeee61278505dbbe51d&units=metric`;
-  axios.get(url).then(showTemperature);
-
-  axios.get(url).then(showTemperature);
-
-  if (temperature) {
-    return (
-      <p>
-        The temperature in {props.city} is currently {Math.round(temperature)}°C
-      </p>
-    );
-  } else {
-    return <p>Loading temperature for {props.city}..</p>;
-  }
+      {/* <div className='row'>
+        <div className='card'>
+          <div className='card-body'>Coming soon</div>
+        </div>
+      </div> */}
+    </div>
+  );
 }
