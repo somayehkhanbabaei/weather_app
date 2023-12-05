@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-
 import WeatherDataInfo from './WeatherDataInfo';
 
 export default function Weather(props) {
@@ -8,7 +7,7 @@ export default function Weather(props) {
   const [city, setCity] = useState(props.defaultCity);
 
   function getInfo(response) {
-    console.log(response);
+    console.log(response.data);
     setWeatherInfo({
       ready: true,
       temperature: Math.round(response?.data?.temperature?.current),

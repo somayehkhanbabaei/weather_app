@@ -1,10 +1,7 @@
 body {
   background-color: #fff;
+  font-family: sans-serif;
 }
-
-/* input:focus {
-  border
-} */
 
 input[type='text']:focus {
   border: 1px solid rgb(245, 124, 53);
@@ -16,6 +13,11 @@ input[type='text']:focus {
   max-width: 750px;
   box-shadow: 1px 1px 5px 0.2px rgb(250, 132, 89);
   border-radius: 5px;
+}
+
+h1 {
+  color: rgb(1, 1, 53);
+  font-size: 45px;
 }
 
 .btn-primary {
@@ -48,14 +50,24 @@ p {
 
 ul li {
   list-style-type: none;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 400;
   color: rgb(48, 47, 47);
   margin-top: 25px;
+  color: rgb(1, 1, 53);
 }
 
 .iconInfo {
   font-size: 35px;
   font-weight: 700;
   margin-top: 50px;
+}
+
+.weatherIcon {
+  background-color: rgb(1, 1, 53);
+  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+}
+
+.weatherIcon_temp {
+  font-size: 40px;
 }
