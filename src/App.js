@@ -3,7 +3,7 @@ import Weather from './Weather';
 function App() {
   return (
     <div className='App'>
-      <Weather />
+      <Weather defaultCity='Utrecht' />
       <p className='mt-5'>
         Created by Somayeh Khanbabaei{' '}
         <a href='https://github.com/somayehkhanbabaei/weather_app'>

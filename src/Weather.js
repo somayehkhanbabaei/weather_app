@@ -7,7 +7,6 @@ export default function Weather(props) {
   const [city, setCity] = useState(props.defaultCity);
 
   function getInfo(response) {
-    console.log(response.data);
     setWeatherInfo({
       ready: true,
       temperature: Math.round(response?.data?.temperature?.current),
@@ -30,7 +29,7 @@ export default function Weather(props) {
   }
 
   function search() {
-    let url = `https://api.shecodes.io/weather/v1/current?lat=38.71667&lon=-9.13333&key=d610f0bte2b08e415f7be30e72oaf90a&units=metric`;
+    let url = `https://api.shecodes.io/weather/v1/current?query=${city}&key=d610f0bte2b08e415f7be30e72oaf90a&units=metric`;
 
     axios.get(url).then(getInfo);
   }
@@ -43,7 +42,7 @@ export default function Weather(props) {
             <div className='col-9'>
               <div className='form-group'>
                 <input
-                  type='text'
+                  type='search'
                   className='form-control p-3 shadow-none'
                   placeholder='Type a city name'
                   onChange={handleCityChange}
