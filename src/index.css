@@ -8,7 +8,7 @@ input[type='text']:focus {
 }
 
 .container {
-  height: 500px;
+  height: 700px;
   margin-top: 55px;
   max-width: 750px;
   box-shadow: 1px 1px 5px 0.2px rgb(250, 132, 89);
@@ -16,7 +16,7 @@ input[type='text']:focus {
 }
 
 h1 {
-  color: rgb(1, 1, 53);
+  color: white;
   font-size: 45px;
 }
 
@@ -54,7 +54,7 @@ ul li {
   font-weight: 400;
   color: rgb(48, 47, 47);
   margin-top: 25px;
-  color: rgb(1, 1, 53);
+  color: white;
 }
 
 .iconInfo {

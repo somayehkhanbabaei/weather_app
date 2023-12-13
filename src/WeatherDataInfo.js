@@ -26,7 +26,7 @@ export default function WeatherDataInfo({ data }) {
           <div className='card-body iconInfo text-center mt-0'>
             <div className='text-white'>{data.description}</div>
             <div>
-              <WeatherIcon icon={data?.icon} size={100} />
+              <WeatherIcon color='white' icon={data?.icon} size={100} />
             </div>
             <div className='text-white weatherIcon_temp'>
               {data?.temperature}°C
